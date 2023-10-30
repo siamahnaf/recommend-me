@@ -68,7 +68,7 @@ const Home = () => {
       <div className="grid grid-cols-5 gap-2 mt-5">
         {data?.results &&
           data.results.map((item, i) => (
-            <div className="bg-slate-600 rounded-lg overflow-hidden">
+            <div className="bg-slate-600 rounded-lg overflow-hidden" key={i}>
               <Image
                 src={`https://image.tmdb.org/t/p/original${item.poster_path}`}
                 width={180}
